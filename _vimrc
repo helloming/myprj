@@ -66,8 +66,11 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 set rtp+=$VIM/vimfiles/bundle/Vundle.vim/
 let path='$VIM/vimfiles/bundle' 
-call vundle#rc(path)
-Bundle 'gmarik/vundle'
+call vundle#begin(path)
+Bundle 'gmarik/Vundle.vim'
+Bundle 'python_fold_compact'
+call vundle#end()
+filetype plugin indent on    " required
 " 以下为要安装或更新的插件，不同仓库都有（具体书写规范请参考帮助）
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""
